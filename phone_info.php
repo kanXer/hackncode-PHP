@@ -1,6 +1,6 @@
 <?php
 // ==================== CONFIG ====================
-define('API_TOKEN', '8567607096:YfufQS9F');
+define('API_TOKEN', 'API-TOKEN'); //put your api key here
 define('LANG', 'ru');
 define('LIMIT', 600);
 
