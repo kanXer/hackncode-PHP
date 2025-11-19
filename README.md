@@ -54,7 +54,7 @@ Linux Hosting
 
 
 # Folder Structure 📂
-'''
+```
 /
 ├── admin/
 │   ├── admin_login.php
@@ -74,7 +74,7 @@ Linux Hosting
 ├── db.php
 ├── sitemap.xml
 ├── robots.txt
-'''
+```
 
 
 # API (If Enabled) 🧩
