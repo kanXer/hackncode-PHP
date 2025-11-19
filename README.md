@@ -26,7 +26,7 @@ Website fast, secure, and mobile-friendly design use karti hai.
 ✔️ Clean UI with KanXer theme
 
 # Tech Stack 🧩
-# Frontend
+## Frontend
 
 HTML5, CSS3
 
@@ -34,7 +34,7 @@ JavaScript
 
 KanXer Theme (Optimized CSS)
 
-# Backend
+## Backend
 
 PHP 8+
 
@@ -44,7 +44,7 @@ Custom Admin Dashboard
 
 Secure Authentication (Protected Routes)
 
-# Server
+## Server
 
 Apache / Nginx
 
