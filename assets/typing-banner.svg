@@ -1,0 +1,102 @@
+<!-- assets/typing-banner.svg -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="360"
+     viewBox="0 0 1200 360"
+     preserveAspectRatio="xMidYMid slice">
+
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="100%" stop-color="#07110b"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title { font-family: "Consolas","Monaco","Courier New",monospace; font-size:44px; fill:#12d86b; letter-spacing:1px; }
+      .sub   { font-family: "Consolas","Monaco","Courier New",monospace; font-size:20px; fill:#9fe9b8; }
+      .skill { font-family: "Consolas","Monaco","Courier New",monospace; font-size:18px; fill:#bfeec5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- subtle flicker -->
+  <rect x="0" y="0" width="1200" height="360" fill="#14b866" opacity="0.02">
+    <animate attributeName="opacity" values="0.02;0.005;0.02" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <g filter="url(#glow)">
+    <text x="50%" y="110" text-anchor="middle" class="title">
+      <tspan x="50%" dy="0">kanXer —</tspan>
+      <tspan x="50%" dy="48" id="t1" opacity="0">Sahil</tspan>
+      <tspan x="50%" dy="48" id="t2" opacity="0">Srivastava</tspan>
+    </text>
+
+    <animate xlink:href="#t1" attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.12s" fill="freeze"/>
+    <animate xlink:href="#t1" attributeName="y" values="158;148" begin="0.6s" dur="0.12s" fill="freeze"/>
+
+    <animate xlink:href="#t2" attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.12s" fill="freeze"/>
+    <animate xlink:href="#t2" attributeName="y" values="206;196" begin="0.9s" dur="0.12s" fill="freeze"/>
+  </g>
+
+  <!-- Role -->
+  <text x="50%" y="200" text-anchor="middle" class="sub">
+    <tspan id="r0" opacity="0">Role:</tspan>
+    <tspan id="r1" opacity="0">Security</tspan>
+    <tspan id="r2" opacity="0">Researcher</tspan>
+    <tspan id="r3" opacity="0">•</tspan>
+    <tspan id="r4" opacity="0">Developer</tspan>
+    <tspan id="r5" opacity="0">•</tspan>
+    <tspan id="r6" opacity="0">Black</tspan>
+    <tspan id="r7" opacity="0">Hat</tspan>
+    <tspan id="r8" opacity="0">Hacker</tspan>
+
+    <animate xlink:href="#r0" attributeName="opacity" from="0" to="1" begin="1.3s" dur="0.08s" fill="freeze"/>
+    <animate xlink:href="#r1" attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.08s" fill="freeze"/>
+    <animate xlink:href="#r2" attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.08s" fill="freeze"/>
+    <animate xlink:href="#r3" attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.06s" fill="freeze"/>
+    <animate xlink:href="#r4" attributeName="opacity" from="0" to="1" begin="2.05s" dur="0.08s" fill="freeze"/>
+    <animate xlink:href="#r5" attributeName="opacity" from="0" to="1" begin="2.25s" dur="0.06s" fill="freeze"/>
+    <animate xlink:href="#r6" attributeName="opacity" from="0" to="1" begin="2.38s" dur="0.08s" fill="freeze"/>
+    <animate xlink:href="#r7" attributeName="opacity" from="0" to="1" begin="2.55s" dur="0.08s" fill="freeze"/>
+    <animate xlink:href="#r8" attributeName="opacity" from="0" to="1" begin="2.75s" dur="0.08s" fill="freeze"/>
+  </text>
+
+  <!-- Focus -->
+  <text x="50%" y="240" text-anchor="middle" class="sub" opacity="0">
+    <tspan id="focus">Focus: Advanced Threat Intelligence & Security Automation</tspan>
+    <animate xlink:href="#focus" attributeName="opacity" from="0" to="1" begin="3.0s" dur="0.18s" fill="freeze"/>
+  </text>
+
+  <!-- Skills -->
+  <g transform="translate(0,280)" text-anchor="middle">
+    <text x="50%" y="0" class="skill" opacity="0" id="s1">🔐 Offensive-thinking Pen-Testing (authorized & responsible)</text>
+    <text x="50%" y="26" class="skill" opacity="0" id="s2">🕵️ OSINT & Adversary Tradecraft Analysis</text>
+    <text x="50%" y="52" class="skill" opacity="0" id="s3">🐍 Python Automation & Red-team Tooling (for testing under scope)</text>
+    <text x="50%" y="78" class="skill" opacity="0" id="s4">🛡️ Threat Detection & Security Automation</text>
+    <text x="50%" y="104" class="skill" opacity="0" id="s5">💻 Digital Forensics & Incident Response</text>
+
+    <animate xlink:href="#s1" attributeName="opacity" from="0" to="1" begin="3.4s" dur="0.12s" fill="freeze"/>
+    <animate xlink:href="#s2" attributeName="opacity" from="0" to="1" begin="3.8s" dur="0.12s" fill="freeze"/>
+    <animate xlink:href="#s3" attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.12s" fill="freeze"/>
+    <animate xlink:href="#s4" attributeName="opacity" from="0" to="1" begin="4.5s" dur="0.12s" fill="freeze"/>
+    <animate xlink:href="#s5" attributeName="opacity" from="0" to="1" begin="4.85s" dur="0.12s" fill="freeze"/>
+  </g>
+
+  <!-- signature -->
+  <text x="50%" y="350" text-anchor="middle"
+        font-family="Consolas,monospace"
+        font-size="12" fill="#0ea869" opacity="0.7">
+    /* Adversary's mindset — lawful execution */
+  </text>
+</svg>

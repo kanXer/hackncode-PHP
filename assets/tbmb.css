@@ -1,0 +1,120 @@
+/* ========== KanXer Theme Base ========== */
+:root {
+  --bg: #050505;
+  --panel: #07110b;
+  --accent: #14b866;
+  --muted: #a8b3a6;
+  --glass: rgba(255, 255, 255, 0.03);
+  scroll-behavior: smooth;
+}
+
+body {
+  
+  margin: 0;
+  font-family: 'Inter', system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: white;
+  transition: 0.3s background, 0.3s color;
+  
+}
+
+/* Light mode toggle */
+body.light {
+  --bg: #f5f5f5;
+  --panel: #ffffff;
+  --accent: #14b866;
+  --muted: #333;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 24px;
+  background: var(--glass);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(20, 184, 102, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.tbomb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass);
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 100px auto;
+  box-shadow: 0 0 50px rgba(20, 184, 102, 0.05);
+  backdrop-filter: blur(12px);
+}
+h1 {
+  color: var(--accent);
+  text-align: center;
+}
+.tbomb-input {
+  width: 100%;
+  padding: 0.9rem 1rem; /* पहले से बड़ा padding */
+  font-size: 1rem; /* टेक्स्ट थोड़ा बड़ा */
+  border-radius: 0.75rem; /* हल्का और स्मूद कॉर्नर */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: inherit;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.tbomb-input:focus {
+  border-color: var(--accent);
+  background: rgba(20, 184, 102, 0.05);
+  box-shadow: 0 0 10px rgba(20, 184, 102, 0.2);
+}
+form#tbombForm {
+  background: rgba(255,255,255,0.02);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(20,184,102,0.08);
+}
+
+.btn {
+  background: linear-gradient(90deg, var(--accent), #0fa86a);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+}
+.btn:hover {
+  background: #0fa86a;
+}
+.api-error-box {
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.tbomb-logbox {
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-family: monospace;
+  color: var(--muted);
+}
+.tbomb-log {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.tbomb-log.ok { color: var(--accent); }
+.tbomb-log.fail { color: #ff4d4f; }
+
+
+.progress { margin-top:10px;height:10px;border-radius:6px;background:rgba(255,255,255,0.05); }
+.progress-bar { height:100%;width:0;background:var(--accent);transition:width 0.3s; }

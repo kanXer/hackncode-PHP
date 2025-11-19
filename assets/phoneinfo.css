@@ -1,0 +1,266 @@
+/* ========== KanXer Theme Base ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap');
+:root {
+  --bg: #050505;
+  --panel: #07110b;
+  --accent: #14b866;
+  --muted: #a8b3a6;
+  --glass: rgba(255, 255, 255, 0.03);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  background: var(--bg);
+  color: white;
+  transition: 0.3s background, 0.3s color;
+}
+
+/* Light mode toggle */
+body.light {
+  --bg: #f5f5f5;
+  --panel: #ffffff;
+  --accent: #000000;
+  --muted: #333;
+  color: #000;
+}
+
+/* ===========================
+   Lookup Form (KanXer Themed - Fully Responsive)
+   =========================== */
+.phone-info-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: var(--bg);
+  color: var(--muted);
+}
+
+/* Main Card */
+.lookup-card {
+  background: linear-gradient(180deg, var(--panel), rgba(20, 184, 102, 0.1));
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(20, 184, 102, 0.08);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+}
+
+.lookup-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.7);
+}
+
+/* Title */
+.lookup-card h2 {
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  font-size: 1.75rem;
+  text-shadow: 0 0 10px rgba(20, 184, 102, 0.4);
+}
+
+/* Form Layout */
+.lookup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Radio Options */
+.lookup-radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.lookup-radio label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.lookup-radio input[type="radio"] {
+  accent-color: var(--accent);
+  transform: scale(1.1);
+}
+
+/* Input */
+.lookup-input {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(20, 184, 102, 0.08);
+  background: linear-gradient(180deg, var(--panel), rgba(10, 20, 12, 0.45));
+  color: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.lookup-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0.5rem rgba(20, 184, 102, 0.4);
+}
+
+/* Checkbox */
+.lookup-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.lookup-checkbox input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Submit Button */
+.lookup-btn {
+  padding: 0.8rem 1.25rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(90deg, var(--accent), #0fa86a);
+  color: #021;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.lookup-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* ===========================
+   Lookup Result Card
+   =========================== */
+.project {
+  background: linear-gradient(180deg, var(--panel), rgba(10, 20, 12, 0.2));
+  border: 1px solid rgba(20, 184, 102, 0.08);
+  border-radius: 1rem;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  overflow: hidden;
+}
+
+/* ===========================
+   Lookup Result Table (Responsive & Overflow Safe)
+   =========================== */
+.lookup-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, var(--panel), rgba(10, 20, 12, 0.3));
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.lookup-table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+}
+
+.lookup-table th,
+.lookup-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(20, 184, 102, 0.06);
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.lookup-table th {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.lookup-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Scrollbar Styling */
+.lookup-table-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.lookup-table-container::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+/* ===========================
+   Responsive Styling
+   =========================== */
+@media (max-width: 768px) {
+  .lookup-card {
+    padding: 1.25rem;
+    max-width: 95%;
+  }
+
+  .lookup-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .lookup-input {
+    font-size: 0.95rem;
+  }
+
+  .lookup-btn {
+    font-size: 0.9rem;
+  }
+
+  .lookup-table th,
+  .lookup-table td {
+    font-size: 0.85rem;
+    padding: 0.65rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .phone-info-page {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .lookup-card {
+    border-radius: 0.75rem;
+    padding: 1rem;
+  }
+
+  .lookup-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .lookup-btn {
+    font-size: 0.85rem;
+  }
+
+  .lookup-table th,
+  .lookup-table td {
+    font-size: 0.8rem;
+  }
+}

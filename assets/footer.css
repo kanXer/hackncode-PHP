@@ -1,0 +1,9 @@
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.125rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}

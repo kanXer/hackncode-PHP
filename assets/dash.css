@@ -1,0 +1,123 @@
+/* ========== GLOBAL BODY (Dark Theme) ========== */
+body { 
+    margin: 0;
+    padding: 20px;
+    background: #0d0f11; 
+    color: #e5e7eb; 
+    font-family: Arial, sans-serif;
+}
+
+/* ========== MAIN BOXES (Full Width + Dark Mode) ========== */
+.login-box, 
+.dash-box {
+    width: 100%;
+    background: #161a1d; /* Dark Background so white text visible */
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 1px solid #21262d;
+}
+
+/* ========== INPUTS & TEXTAREAS ========== */
+input, textarea {
+    width: 100%; 
+    margin-top: 10px; 
+    padding: 10px;
+    background: #0d1117; 
+    border: 1px solid #30363d; 
+    color: #e5e7eb;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #238636;
+    outline: none;
+}
+
+/* ========== BUTTONS ========== */
+button {
+    padding: 12px; 
+    width: 100%; 
+    margin-top: 12px;
+    background: #238636; 
+    border: none; 
+    color: #fff; 
+    cursor: pointer;
+    font-size: 16px; 
+    border-radius: 8px;
+}
+button:hover {
+    background: #2ea043;
+}
+
+/* ========== LINKS ========== */
+.logout {
+    color: #ff4a4a; 
+    float: right; 
+    text-decoration: none;
+    font-weight: bold;
+}
+.logout:hover { opacity: 0.8; }
+
+.back-btn {
+    color: #91caff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* ========== STATUS TEXT ========== */
+.success { color: #14ff72; }
+.err { color: #ff4a4a; }
+
+/* ========== LIST STYLES (Dashboard News Rows) ========== */
+.news-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    background:#1b1f23;
+    border:1px solid #30363d;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.news-row strong { color: #fff; }
+.small { font-size:13px;color:#9ca3af }
+
+/* Edit/Delete Buttons */
+.a-edit{ 
+    background:#1d8bff; 
+    padding:6px 10px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#fff;
+}
+.a-delete{ 
+    background:#ff4b4b; 
+    padding:6px 10px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#fff;
+}
+
+.news-row .actions a{ margin-left:8px; }
+
+/* ========== Image Preview Box ========== */
+.img-box{
+    display:inline-block;
+    margin:10px;
+    text-align:center;
+}
+.img-box img{
+    width:130px;
+    height:auto;
+    border-radius:6px;
+    border:1px solid #30363d;
+}
+.delete-check{ margin-top:6px; }
+
+.news-form textarea { resize: vertical; }

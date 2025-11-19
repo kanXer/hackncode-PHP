@@ -1,0 +1,52 @@
+[
+    {
+        "name": "justdial",
+        "method": "GET",
+        "url": "https://t.justdial.com/api/india_api_write/18july2018/sendvcode.php",
+        "params": {
+        "mobile": "{target}"
+        },
+        "identifier": "\"sent_status\":\"SUCCESS\""
+    },
+    {
+        "name": "allensolly",
+        "method": "POST",
+        "url": "https:\/\/www.allensolly.com\/capillarylogin\/validateMobileOrEMail",
+        "data": {
+            "mobileoremail": "{target}",
+            "name": "markluther"
+        },
+        "identifier": "true"
+    },
+    {
+        "name": "gapoon",
+        "method": "POST",
+        "url": "https:\/\/www.gapoon.com\/userSignup",
+        "data": {
+            "mobile": "{target}",
+            "email": "noreply@gmail.com",
+            "name": "LexLuthor"
+        },
+        "identifier": "1"
+    },
+    {
+        "name": "housing",
+        "method": "POST",
+        "url": "https:\/\/login.housing.com\/api\/v2\/send-otp",
+        "data": {
+            "phone": "{target}"
+        },
+        "identifier": "Sent"
+    },
+    {
+        "name": "confirmtkt",
+        "method": "GET",
+        "url": "https://securedapi.confirmtkt.com/api/platform/register",
+        "params": {
+        "newOtp": "true",
+        "mobileNumber": "{target}"
+        },
+        "identifier": "\"success\":true"
+    }
+    
+]

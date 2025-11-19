@@ -1,0 +1,5 @@
+# This robots.txt file allows all crawlers (including Google, Facebook, and Twitter) 
+# to access and crawl all content on the website.
+
+User-agent: *
+Allow: /

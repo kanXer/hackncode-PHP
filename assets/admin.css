@@ -1,0 +1,107 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0f11;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== LOGIN WRAPPER ===== */
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background: #111418;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* ===== HEADING ===== */
+.login-box h2 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* ===== INPUTS ===== */
+input, textarea {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #fff;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #238636;
+    box-shadow: 0 0 5px rgba(35,134,54,0.4);
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 12px;
+    width: 100%;
+    margin-top: 12px;
+    background: #238636;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1f7830;
+}
+
+/* Blue button for Add Admin */
+button[name="add_admin"] {
+    background: #294eff;
+}
+
+button[name="add_admin"]:hover {
+    background: #2143e0;
+}
+
+/* ===== ERROR / SUCCESS ===== */
+.err {
+    color: #ff4a4a;
+    background: rgba(255,74,74,0.1);
+    padding: 10px;
+    border-left: 3px solid #ff4a4a;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: #14ff72;
+    background: rgba(20,255,114,0.1);
+    padding: 10px;
+    border-left: 3px solid #14ff72;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* ===== Responsive Fix ===== */
+@media (max-width: 480px) {
+    .login-box {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 22px;
+    }
+}
