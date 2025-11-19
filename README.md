@@ -2,12 +2,12 @@
 
 Real-time cyber security alerts, tech news, tools, and resources.
 
-🚀 Overview
+#🚀 Overview
 
 HacnCode.live ek cyber-security focused platform hai jo India aur world ke latest cyber alerts, data breaches, vulnerabilities, cloud status, OSINT resources, aur hacking-related updates provide karta hai.
 Website fast, secure, and mobile-friendly design use karti hai.
 
-📌 Features
+#📌 Features
 
 ✔️ Live Cyber Security News
 
@@ -25,8 +25,8 @@ Website fast, secure, and mobile-friendly design use karti hai.
 
 ✔️ Clean UI with KanXer theme
 
-🧩 Tech Stack
-Frontend
+#🧩 Tech Stack
+#Frontend
 
 HTML5, CSS3
 
@@ -34,7 +34,7 @@ JavaScript
 
 KanXer Theme (Optimized CSS)
 
-Backend
+#Backend
 
 PHP 8+
 
@@ -44,7 +44,7 @@ Custom Admin Dashboard
 
 Secure Authentication (Protected Routes)
 
-Server
+#Server
 
 Apache / Nginx
 
@@ -53,7 +53,7 @@ Cloudflare CDN
 Linux Hosting
 
 
-📂 #Folder #Structure
+#📂 Folder Structure
 /
 ├── admin/
 │   ├── admin_login.php
@@ -76,7 +76,7 @@ Linux Hosting
 
 
 
-🧩 #API (If Enabled)
+#🧩 API (If Enabled)
 
 /api/news/latest
 
@@ -84,21 +84,21 @@ Linux Hosting
 
 /api/status/cloudflare (Coming soon)
 
-🤝 #Contributing
+#🤝 Contributing
 
 Pull requests welcome!
 Agar aapko koi bug mile ya feature chahiye — issue open karein.
 
-🛡️ #Disclaimer
+🛡️ Disclaimer
 
 Website sirf educational purposes ke liye hai.
 Hacking / illegal activity promote nahi ki jaati.
 
-🧑‍💻 #Developer
+#🧑‍💻 Developer
 
 Developed by: KanXer
 Contributors: Lala (UI & Initial Design)
 
-⭐ #Support
+#⭐ Support
 
 Agar project pasand aaye toh repo ko star dena mat bhoolna ⭐
